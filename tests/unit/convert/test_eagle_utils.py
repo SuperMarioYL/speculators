@@ -298,7 +298,7 @@ class TestDetectFusionBiasAndLayernorms:
         assert not has_bias
         assert not has_layernorms
 
-    @patch("speculators.convert.utils.logger")
+    @patch("speculators.convert.eagle.utils.logger")
     def test_logging_messages(self, mock_logger):
         """Test that appropriate log messages are generated."""
         weights = {
