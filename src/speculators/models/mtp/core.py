@@ -9,12 +9,12 @@ from transformers import PretrainedConfig
 from speculators import SpeculatorModel
 from speculators.config import SpeculatorsConfig, VerifierConfig
 from speculators.model import DraftVocabMixin
-from speculators.models.eagle3.core import conditional_torch_compile
 from speculators.models.mtp.config import MTPConfig
 from speculators.models.mtp.model_definitions import (
     mtp_model_classes,
     resolve_model_type,
 )
+from speculators.models.utils import conditional_torch_compile
 from speculators.proposals.greedy import GreedyTokenProposalConfig
 
 __all__ = ["MTPDraftModel", "compute_step_weights"]
